@@ -75,12 +75,14 @@ gdjs.WarCode.condition1IsTrue_0 = {val:false};
 gdjs.WarCode.condition2IsTrue_0 = {val:false};
 gdjs.WarCode.condition3IsTrue_0 = {val:false};
 gdjs.WarCode.condition4IsTrue_0 = {val:false};
+gdjs.WarCode.condition5IsTrue_0 = {val:false};
 gdjs.WarCode.conditionTrue_1 = {val:false};
 gdjs.WarCode.condition0IsTrue_1 = {val:false};
 gdjs.WarCode.condition1IsTrue_1 = {val:false};
 gdjs.WarCode.condition2IsTrue_1 = {val:false};
 gdjs.WarCode.condition3IsTrue_1 = {val:false};
 gdjs.WarCode.condition4IsTrue_1 = {val:false};
+gdjs.WarCode.condition5IsTrue_1 = {val:false};
 
 
 gdjs.WarCode.mapOfGDgdjs_46WarCode_46GDEnemyObjects3Objects = Hashtable.newFrom({"Enemy": gdjs.WarCode.GDEnemyObjects3});
@@ -172,23 +174,28 @@ gdjs.WarCode.condition0IsTrue_0.val = false;
 gdjs.WarCode.condition1IsTrue_0.val = false;
 gdjs.WarCode.condition2IsTrue_0.val = false;
 gdjs.WarCode.condition3IsTrue_0.val = false;
+gdjs.WarCode.condition4IsTrue_0.val = false;
 {
-gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.WarCode.mapOfGDgdjs_46WarCode_46GDBackgroundObjects2Objects, runtimeScene, true, false);
 }if ( gdjs.WarCode.condition0IsTrue_0.val ) {
 {
-gdjs.WarCode.condition1IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.WarCode.mapOfGDgdjs_46WarCode_46GDBackgroundObjects2Objects, runtimeScene, true, false);
+gdjs.WarCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 }if ( gdjs.WarCode.condition1IsTrue_0.val ) {
 {
 gdjs.WarCode.condition2IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("Bullet_Exists")) == 0;
 }if ( gdjs.WarCode.condition2IsTrue_0.val ) {
 {
-{gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition3IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8130580);
+gdjs.WarCode.condition3IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("Reffil_Anim_exist")) == 0;
+}if ( gdjs.WarCode.condition3IsTrue_0.val ) {
+{
+{gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition4IsTrue_0;
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9956524);
 }
 }}
 }
 }
-if (gdjs.WarCode.condition3IsTrue_0.val) {
+}
+if (gdjs.WarCode.condition4IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("Cannon"), gdjs.WarCode.GDCannonObjects2);
 gdjs.WarCode.GDBulletObjects2.length = 0;
 
@@ -270,18 +277,27 @@ gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("Reffil_Anim_exist")) == 1;
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Cannon"), gdjs.WarCode.GDCannonObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Cannon_RefillAnim"), gdjs.WarCode.GDCannon_95RefillAnimObjects1);
-{for(var i = 0, len = gdjs.WarCode.GDCannon_95RefillAnimObjects1.length ;i < len;++i) {
-    gdjs.WarCode.GDCannon_95RefillAnimObjects1[i].getBehavior("Tween").addObjectHeightTween("Refill", 0, "easeInQuad", 40, false);
+gdjs.copyArray(runtimeScene.getObjects("Cannon"), gdjs.WarCode.GDCannonObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Cannon_RefillAnim"), gdjs.WarCode.GDCannon_95RefillAnimObjects2);
+{for(var i = 0, len = gdjs.WarCode.GDCannon_95RefillAnimObjects2.length ;i < len;++i) {
+    gdjs.WarCode.GDCannon_95RefillAnimObjects2[i].getBehavior("Tween").addObjectHeightTween("Refill", 0, "easeInQuad", 40, false);
 }
-}{for(var i = 0, len = gdjs.WarCode.GDCannonObjects1.length ;i < len;++i) {
-    gdjs.WarCode.GDCannonObjects1[i].getBehavior("Tween").addObjectHeightTween("cannon_Reload", 177, "easeInQuad", 50, false);
+}{for(var i = 0, len = gdjs.WarCode.GDCannonObjects2.length ;i < len;++i) {
+    gdjs.WarCode.GDCannonObjects2[i].getBehavior("Tween").addObjectHeightTween("cannon_Reload", 177, "easeInQuad", 50, false);
 }
-}{for(var i = 0, len = gdjs.WarCode.GDCannonObjects1.length ;i < len;++i) {
-    gdjs.WarCode.GDCannonObjects1[i].setAnimation(0);
+}{for(var i = 0, len = gdjs.WarCode.GDCannonObjects2.length ;i < len;++i) {
+    gdjs.WarCode.GDCannonObjects2[i].setAnimation(0);
 }
 }}
+
+}
+
+
+{
+
+
+{
+}
 
 }
 
@@ -298,7 +314,7 @@ gdjs.WarCode.eventsList4 = function(runtimeScene) {
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8460276);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9970828);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 {runtimeScene.getVariables().get("Score").add(1);
@@ -693,7 +709,7 @@ gdjs.WarCode.eventsList10(runtimeScene);} //End of subevents
 gdjs.WarCode.condition0IsTrue_0.val = false;
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition0IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8891524);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9982012);
 }
 }if (gdjs.WarCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.camera.setCameraX(runtimeScene, gdjs.evtTools.camera.getCameraX(runtimeScene, "", 0) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("shakeDistance"))), "", 0);
@@ -782,7 +798,7 @@ gdjs.WarCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(r
 }if ( gdjs.WarCode.condition0IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition1IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8798084);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9978124);
 }
 }}
 if (gdjs.WarCode.condition1IsTrue_0.val) {
@@ -918,7 +934,7 @@ gdjs.WarCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(r
 }if ( gdjs.WarCode.condition1IsTrue_0.val ) {
 {
 {gdjs.WarCode.conditionTrue_1 = gdjs.WarCode.condition2IsTrue_0;
-gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8426052);
+gdjs.WarCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9996476);
 }
 }}
 }

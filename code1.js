@@ -101,7 +101,7 @@ gdjs.MainGameCode.eventsList1 = function(runtimeScene) {
 gdjs.MainGameCode.condition0IsTrue_0.val = false;
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition0IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8409892);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9905884);
 }
 }if (gdjs.MainGameCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "429591__inspectorj__chewing-breadstick-single-d.wav", false, 100, 1);
@@ -200,7 +200,7 @@ for(var i = 0, k = 0, l = gdjs.MainGameCode.GDVideoObjects2.length;i<l;++i) {
 gdjs.MainGameCode.GDVideoObjects2.length = k;}if ( gdjs.MainGameCode.condition4IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition5IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8403948);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9899940);
 }
 }}
 }
@@ -421,7 +421,7 @@ for(var i = 0, k = 0, l = gdjs.MainGameCode.GDBtn_95AddFoodObjects2.length;i<l;+
 gdjs.MainGameCode.GDBtn_95AddFoodObjects2.length = k;}if ( gdjs.MainGameCode.condition3IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition4IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8412412);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9908404);
 }
 }}
 }
@@ -496,7 +496,7 @@ for(var i = 0, k = 0, l = gdjs.MainGameCode.GDBtn_95AddFoodObjects2.length;i<l;+
 gdjs.MainGameCode.GDBtn_95AddFoodObjects2.length = k;}if ( gdjs.MainGameCode.condition3IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition4IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8417476);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9913468);
 }
 }}
 }
@@ -634,7 +634,7 @@ gdjs.MainGameCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPres
 }if ( gdjs.MainGameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition2IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8424052);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9920044);
 }
 }if ( gdjs.MainGameCode.condition2IsTrue_0.val ) {
 {
@@ -678,7 +678,7 @@ for(var i = 0, k = 0, l = gdjs.MainGameCode.GDVideoObjects1.length;i<l;++i) {
 gdjs.MainGameCode.GDVideoObjects1.length = k;}if ( gdjs.MainGameCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition1IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8426132);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9922124);
 }
 }}
 if (gdjs.MainGameCode.condition1IsTrue_0.val) {
@@ -731,7 +731,7 @@ gdjs.MainGameCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPres
 }if ( gdjs.MainGameCode.condition1IsTrue_0.val ) {
 {
 {gdjs.MainGameCode.conditionTrue_1 = gdjs.MainGameCode.condition2IsTrue_0;
-gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8430412);
+gdjs.MainGameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9926404);
 }
 }}
 }
